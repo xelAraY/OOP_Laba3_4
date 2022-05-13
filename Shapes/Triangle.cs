@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,8 @@ namespace Shapes
     public class Triangle : BaseShape
     {
         public int Side { get; set; }
-        public Triangle(int x1, int y1, int x2, int y2) : base(x1, y1, x2, y2)
+        public Triangle(string name, int x1, int y1, int x2, int y2, bool selected, Color color) : 
+            base(name, x1, y1, x2, y2, selected, color)
         {
             Side = Math.Abs(x2 - x1);
         }

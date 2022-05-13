@@ -2,6 +2,6 @@
 {
     internal interface IDrawer
     {
-        void Draw(Graphics g, Pen pen, int x, int y);
+        void Draw(Graphics g, Pen pen, int x1, int y1, int x2, int y2);
     }
 }

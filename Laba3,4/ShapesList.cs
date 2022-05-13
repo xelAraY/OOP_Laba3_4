@@ -7,7 +7,8 @@ using Shapes;
 
 namespace Laba3_4
 {
-    public class ShapesList : List<string>
+    [Serializable]
+    public class ShapesList : List<BaseShape>
     {
 
     }

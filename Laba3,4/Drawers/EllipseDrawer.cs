@@ -2,9 +2,9 @@
 {
     internal class EllipseDrawer : IDrawer
     {
-        public void Draw(Graphics g, Pen pen, int x, int y)
+        public void Draw(Graphics g, Pen pen, int x1, int y1, int x2, int y2)
         {
-            g.DrawEllipse(pen, x, y, 50, 50);
+            g.DrawEllipse(pen, Math.Min(x1, x2), Math.Min(y1, y2), Math.Abs(x1 - x2), Math.Abs(y1 - y2));
         }
     }
 }
